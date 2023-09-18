@@ -1,0 +1,107 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../assets/background.jpg");
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardinfo{
+    border-radius: 20px 0px 0px 20px;
+    width: 600px;
+    height: 500px;
+    background: #c69c78;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Logo{
+    width: 180px;
+    height: 130px;
+}
+
+.cardinfo h1{
+    color: white;
+    font-size: 50px;
+    font-family: serif;
+}
+
+.cardinfo h3{
+    color: white;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cardinfo p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+.cardform{
+    width: 600px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+
+.cardform h4{
+    color: blue;
+    font-weight: 100;
+}
+
+.input_user .input_pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.icons{
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+    background-color: white;
+    border-radius: 100%;
+    padding-top: 10px;
+}
+
+.inputs{
+    background: rgba(110, 110, 110, 0.5);
+    height: 40px;
+    width: 300px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 100px;
+    padding-inline: 10px;
+}
+
+.btn{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+}

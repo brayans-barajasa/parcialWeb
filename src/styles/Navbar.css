@@ -1,0 +1,19 @@
+.logo-image{
+  width: 1001px; 
+  height: auto; 
+}
+
+.navbar-brand:hover {
+  padding: 15px;
+  background-color: rgb(119, 115, 115);
+}
+
+.container-fluid img{
+  height: 50px;
+  width: auto;
+  margin: 0 20px 0 0;
+}
+.nav-item img{
+  height: 30vh; 
+  width: auto;
+}
