@@ -24,13 +24,14 @@ const FormularioLogin = () => {
 
     //Consumo de Servicio Login
     await axios
-      .post("http://89.116.25.43:3500/api/login", data)
-      .then((resp) => {
-        console.log(resp);
-        localStorage.setItem("token", resp.data.jwt);
-        localStorage.setItem("user", resp.data.user);
-        localStorage.setItem("username", resp.data.user.usuario);
-        //Swal.fire("Información!", "Buen Trabajo!", "success");
+    .post("http://89.116.25.43:3500/api/login", data)
+    .then((resp) => {
+      console.log(resp);
+      localStorage.setItem("token", resp.data.jwt);
+      localStorage.setItem("user", resp.data.user);
+      localStorage.setItem("username", resp.data.user.usuario);
+
+      Swal.fire('Bienvenido '+usuario)
         navigate("/dashboard");
       })
       .catch((err) => {

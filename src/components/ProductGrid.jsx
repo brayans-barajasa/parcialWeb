@@ -36,7 +36,7 @@ const ProductGrid = () => {
 
   return (
     <div className="grid-container">
-      {data.map((producto, index) => (
+      {data.map((producto) => (
         <div className="producto" key={producto._id}>
           <div className="producImg">
             <img src={producto.imagen} alt={producto.descripcion} />

@@ -27,3 +27,18 @@
   height: 250px;
 }
 
+#logo-image{
+  
+  width: 200px;
+  height: auto;
+}
+#menu{
+  display: grid;
+  place-items: center;
+  height: 10vh;
+}
+#cerrarsesion{
+  margin-top: 20px;
+  align-items: center;
+}
+

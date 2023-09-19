@@ -9,9 +9,11 @@ for(let i =0; i<myArray.length;i++){
       }
     
 }
+let array = document.getElementById("array");
+let numeroalto = document.getElementById("numeroalto");
 
-
-
+array.textContent = `Array: ${myArray}`;
+numeroalto.textContent = `El número más grande es: ${numeroAlto}`;
 console.log(myArray); 
 console.log(numeroAlto); 
 

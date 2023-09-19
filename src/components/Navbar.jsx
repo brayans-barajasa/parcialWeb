@@ -6,18 +6,19 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const usuario = localStorage.getItem("username");
   return (
-    <nav class="navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+    <nav className="navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
       <div className="container-fluid">
         <div >
           <img className='Logo' src={Logo} alt="" />
-          <a className="navbar-brand" href="#">{usuario}</a>
-          <a className="navbar-brand" href="#">Inicio</a>
-          <a className="navbar-brand" href="#">Productos</a>
-          <a className="navbar-brand" href="#">Contactos</a>
+          <a className="navbar-brand" href="#usuario">{usuario}</a>
+          <a className="navbar-brand" href="#Inicio">Inicio</a>
+          <a className="navbar-brand" href="#Productos">Productos</a>
+          <a className="navbar-brand" href="#Contactos">Contactos</a>
+          <a className="navbar-brand" href="#Ubicacion">Ubicacion</a>
         </div>
         <form className="d-flex justify-content-center " role="search">
           <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-          <button class="btn btn-primary" type="button">Buscar</button>
+          <button className="btn btn-primary" type="button">Buscar</button>
         </form>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -28,26 +29,14 @@ const Navbar = () => {
             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div className="offcanvas-body">
-              <img className="logo-image" src={Logo} alt=""w />
-              
-            <ul className="list-group list-group-flush">
-
-              <li className="list-group-item">
-                <a className="nav-link active" aria-current="page" href="#">{usuario}</a>
-              </li>
-              <li className="list-group-item">
-                <a className="nav-link" href="#">Perfil</a>
-              </li>
-              <li className="list-group-item">
-                <a className="nav-link" href="#">Configuracion</a>
-              </li>
-              <li className="list-group-item">
-                <Link class="btn btn-secondary" to="/login">Cerrar sesión</Link>
-              </li>
-            </ul>
-          </div>
-
+          <ul id='menu' className="list-group list-group-flush">
+            <img id="logo-image" src={Logo} alt="" />
+            <a className="list-group-item" aria-current="page" href="#">{usuario}</a>
+            <a className="list-group-item" href="#">Perfil</a>
+            <a className="list-group-item" href="#">Configuracion</a>
+            <a className="list-group-item" href="#">Sobre nosotros</a>
+            <Link to="/login"><button id='cerrarsesion' type="button" className="btn btn-primary btn-sm">Cerrar sesión</button> </Link>
+          </ul>
         </div>
       </div>
     </nav>
